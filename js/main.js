@@ -9,5 +9,8 @@ var mySwiper = new Swiper(".swiper-container", {
     prevEl: ".slaider-button--prev",
   },
 
-  effect: "cube",
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
 });
