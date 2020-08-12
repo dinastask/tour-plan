@@ -14,3 +14,31 @@ var mySwiper = new Swiper(".swiper-container", {
     onlyInViewport: true,
   },
 });
+
+ymaps.ready(init);
+
+function init() {
+  var myMap = new ymaps.Map(
+    "map",
+    {
+      center: [7.838196, 98.298813],
+      zoom: 15,
+    },
+    {
+      searchControlProvider: "yandex#search",
+    }
+  );
+
+  myMap.geoObjects.add(
+    new ymaps.Placemark(
+      [7.838196, 98.298813],
+      {
+        balloonContent: "цвет <strong>воды пляжа бонди</strong>",
+      },
+      {
+        preset: "islands#icon",
+        iconColor: "#0095b6",
+      }
+    )
+  );
+}

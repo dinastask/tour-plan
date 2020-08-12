@@ -929,16 +929,15 @@ template {
   }
 }
 
-@medai (max-width:  576px);
-.logo {
-  width: 99px;
-}
-
-.slaider {
-  height: 250px;
-}
-
-.hotel__slaider {
-  margin-bottom: 20px;
+@medai (max-width:  576px) {
+  .logo {
+    width: 99px;
+  }
+  .slaider {
+    height: 250px;
+  }
+  __slaider {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
