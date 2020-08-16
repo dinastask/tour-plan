@@ -1,12 +1,12 @@
-var hotelSlaider = new Swiper(".hotel__slaider", {
+var hotelSlaider = new Swiper(".hotel__slider", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slaider-button--next",
-    prevEl: ".slaider-button--prev",
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
 
   keyboard: {
@@ -15,7 +15,7 @@ var hotelSlaider = new Swiper(".hotel__slaider", {
   },
 });
 
-var reviewSlider = new Swiper(".reviews-slider", {
+var reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
