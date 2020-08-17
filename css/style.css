@@ -1020,6 +1020,11 @@ template {
   max-width: 537px;
 }
 
+.reviews .parallax-window {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
