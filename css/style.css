@@ -417,6 +417,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__item--mobile_visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -789,7 +793,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 97px 0;
-  background-image: url(../img/newsletter_bg.jfif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -883,8 +886,6 @@ template {
 
 .reviews {
   padding: 40px 0 70px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
 }
 
 .reviews__title {
@@ -1204,10 +1205,59 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 92;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobile_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
+  }
+  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 78px;
+    right: 0;
+    bottom: 0;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+    z-index: 100;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile_visible {
+    display: block;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .menu-button {
     display: -webkit-box;
@@ -1233,6 +1283,10 @@ template {
     width: 16px;
     height: 1px;
     background-color: #0A223D;
+  }
+  .user__name--light {
+    color: #fff;
+    margin: 10px 0 27px 0;
   }
   .stars {
     -ms-flex-preferred-size: auto;
