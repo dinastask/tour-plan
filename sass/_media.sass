@@ -62,34 +62,37 @@
   .container
     max-width: 576px
     width: 92
-  body
-    padding-top: 78px
-  .navbar
+  .breadcrumb
+    padding-top: 78.8px
 
+    
+  .navbar
     &--mobile
       &_fixed
         position: fixed
         top: 0
         left: 0
         right: 0
-        z-index: 100
+        z-index: 99
     &__user, &__search
       &--mobile
         &_hidden
           display: none
         &_visible
           display: flex
+    &__search
+      &--mobile
+        &_visible
+          margin-bottom: 40px
     &-bottom
       display: none
-      position: fixed
+      position: relative
       left: 0
       top: 78px
       right: 0
-      bottom: 0
       padding-top: 30px
       &--visible
         display: block
-        z-index: 100
     &-menu
       flex-direction: column
       &__item
@@ -127,6 +130,7 @@
   .stars
     flex-basis: auto
   .hotel
+    padding-top: 0
     &-name
       flex-basis: 100%
 

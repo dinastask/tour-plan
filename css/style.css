@@ -1207,15 +1207,15 @@ template {
     max-width: 576px;
     width: 92;
   }
-  body {
-    padding-top: 78px;
+  .breadcrumb {
+    padding-top: 78.8px;
   }
   .navbar--mobile_fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 99;
   }
   .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
@@ -1225,18 +1225,19 @@ template {
     display: -ms-flexbox;
     display: flex;
   }
+  .navbar__search--mobile_visible {
+    margin-bottom: 40px;
+  }
   .navbar-bottom {
     display: none;
-    position: fixed;
+    position: relative;
     left: 0;
     top: 78px;
     right: 0;
-    bottom: 0;
     padding-top: 30px;
   }
   .navbar-bottom--visible {
     display: block;
-    z-index: 100;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1291,6 +1292,9 @@ template {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+  }
+  .hotel {
+    padding-top: 0;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
