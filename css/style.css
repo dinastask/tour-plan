@@ -794,6 +794,10 @@ template {
   overflow: hidden;
 }
 
+.button {
+  outline: 0;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 97px 0;
@@ -1441,7 +1445,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 90%;
     width: 92;
   }
   .breadcrumb {
@@ -1490,6 +1494,7 @@ template {
   }
   .navbar-menu__item--mobile_visible {
     display: block;
+    width: 100%;
   }
   .navbar__user {
     -webkit-box-orient: vertical;
