@@ -1304,8 +1304,7 @@ template {
 }
 
 .footer__message {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
   margin-bottom: 23px;
   height: 123px;
 }
@@ -1316,11 +1315,6 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
-}
-
-.modal {
-  max-height: 100%;
-  overflow-y: auto;
 }
 
 .modal__overlay {
@@ -1345,7 +1339,7 @@ template {
 .modal__dialog {
   visibility: hidden;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 101;
@@ -1354,8 +1348,8 @@ template {
   background-color: #0A223D;
   border-radius: 8px;
   color: #fff;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
@@ -1551,7 +1545,7 @@ template {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 100;
   }
   .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
@@ -1566,12 +1560,12 @@ template {
   }
   .navbar-bottom {
     display: none;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 78px;
     right: 0;
     padding-top: 30px;
-    z-index: 100;
+    z-index: 99;
     max-height: 100vh;
     overflow-y: auto;
   }

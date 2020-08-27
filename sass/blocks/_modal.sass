@@ -1,6 +1,6 @@
 .modal
-  max-height: 100%
-  overflow-y: auto
+
+  
   &__overlay
     visibility: hidden
     opacity: 0
@@ -12,13 +12,15 @@
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 100
     transition: opacity 0.5s
+   
+
     &--visible
       visibility: visible
       opacity: 1
   &__dialog
     visibility: hidden
     opacity: 0
-    position: absolute
+    position: fixed
     top: 50%
     left: 50%
     z-index: 101
@@ -27,7 +29,7 @@
     background-color: $dark
     border-radius: 8px
     color: $light
-    transform: translateX(-50%)
+    transform: translateX(-50%) translateY(-50%)
     transition: opacity 0.5s
 
     &--visible
