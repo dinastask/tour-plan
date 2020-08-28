@@ -1,6 +1,6 @@
 .modal
 
-  
+  overflow-y: scroll
   &__overlay
     visibility: hidden
     opacity: 0
@@ -31,6 +31,9 @@
     color: $light
     transform: translateX(-50%) translateY(-50%)
     transition: opacity 0.5s
+    overflow-y: auto
+    overflow-x: hidden
+    max-height: 100% 
 
     &--visible
       visibility: visible

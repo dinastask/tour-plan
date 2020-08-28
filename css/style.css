@@ -1317,6 +1317,10 @@ template {
   color: #E0E0E0;
 }
 
+.modal {
+  overflow-y: scroll;
+}
+
 .modal__overlay {
   visibility: hidden;
   opacity: 0;
@@ -1352,6 +1356,9 @@ template {
           transform: translateX(-50%) translateY(-50%);
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
 }
 
 .modal__dialog--visible {
@@ -1715,6 +1722,9 @@ template {
     width: 49%;
     height: 255px;
   }
+  .modal__dialog {
+    padding: 20px 40px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1816,6 +1826,12 @@ template {
         -ms-flex-order: 0;
             order: 0;
     margin-bottom: 15px;
+  }
+  .modal__dialog {
+    padding: 15px 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
