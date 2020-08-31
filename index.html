@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Bokeing</title>
     <link
+    rel="preload"
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=<1d4859c9-fa78-4943-a7be-2fec7d01a81f>&lang=ru_RU" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 
@@ -200,7 +200,9 @@
                           <button data-toggle= "modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
                         </div>
                         <!-- /.boking -->
-                        <div id="map" class="map" data-aos="fade-up" data-aos-delay="700">
+                        <div class="map" data-aos="fade-up" data-aos-delay="700"> <iframe
+                          src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa34653fb1e7454e6b08c87a324cb61a14377e6e149de44e137d63e21dc9526f&amp;source=constructor"
+                          frameborder="0" width="100%" height="100%"></iframe>
                         </div>
                         <!-- /.map -->
         </div>
@@ -434,6 +436,26 @@
       </div>
     </footer>
     <!-- /.footer -->
+
+    <section class="footer-bottom">
+    
+       <div class="container">
+          <div class="footer-bottom-wrapper">
+            <ul class="footer-bottom-terms">
+              <li class="footer-bottom__items"><a href="#" class="footer-bottom__link">Disclaimer </a></li>
+              <li class="footer-bottom__items"><a href="#" class="footer-bottom__link">Conditions of use </a></li>
+              <li class="footer-bottom__items"><a href="#" class="footer-bottom__link">Cancellation policy</a></li>
+            </ul>
+            <!-- /.footer-lower_terms -->
+            <div class="footer-bottom__icons">
+              <img src="img/footer-icons.png" alt="#">
+            </div>
+            <!-- /.footer-bottom__icons -->
+          </div>
+       </div>
+ 
+    </section>
+    <!-- /.footer-lower -->
     
     <div class="modal" id="booking-modal">
       <div class="modal__overlay"></div>
@@ -474,6 +496,7 @@
           <!-- /.modal__dialog -->
         </div>
         <!-- /.modal -->
+
   
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

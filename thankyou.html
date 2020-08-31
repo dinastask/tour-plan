@@ -9,11 +9,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<1d4859c9-fa78-4943-a7be-2fec7d01a81f>&lang=ru_RU"
-    type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-
 </head>
 
 <body>
@@ -110,17 +106,13 @@
           <div class="hotel-wrapper">
             <div class="stars">
             </div>
-            <h1 class="hotel-name hotel-info__name">Сообщение отправленно</h1>
+            <h1 class="hotel-name hotel-info__name">Message sent</h1>
           </div>
           <p class="hotel-info__description">
-           Наш менеджер позвонит вам через 5 минут
+          Our manager will call you in 5 minutes
           </p>
         </div>
-        <!-- /.hotel-info__text -->
-        <div data-toggle="model" data-href="#rating-modal" class="rating hotel-info__rating">
-          <span class="rating__text">User Rattings</span>
-          <span class="rating__counter">4.5/5</span>
-        </div>
+
         <!-- /.hotel-info__rating-->
       </div>
       <!-- /.hotel-info -->
@@ -207,9 +199,9 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Booking</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number" name="phone">
+          <form action="send.php" method="POST" class="footer__form form">
+            <input type="text" class="input footer__input" placeholder="Your Full Name" name="name"  required>
+            <input type="text" class="input footer__input" placeholder="Phone Number" name="phone"  required minlength="10" >
             <textarea class="message footer__message" placeholder="Massege" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">Required Fields</span>
@@ -265,7 +257,6 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
-
   <script src="js/parallax.min.js"></script>
   </script>
 </body>
