@@ -20,7 +20,7 @@
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top" >
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/navbar/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -201,8 +201,9 @@
                         </div>
                         <!-- /.boking -->
                         <div class="map" data-aos="fade-up" data-aos-delay="700"> <iframe
-                          src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa34653fb1e7454e6b08c87a324cb61a14377e6e149de44e137d63e21dc9526f&amp;source=constructor"
-                          frameborder="0" width="100%" height="100%"></iframe>
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9338.154543258956!2d126.93572289416366!3d37.58892968636799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c986a45705bb5%3A0x224be1d558aa33!2sSwiss%20Grand%20Hotel!5e0!3m2!1sru!2sru!4v1598867352488!5m2!1sru!2sru"
+                          width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                          tabindex="0"></iframe>
                         </div>
                         <!-- /.map -->
         </div>
@@ -352,7 +353,11 @@
     <footer class="footer" >
       <div class="container">
         <div class="footer-wrapper">
-            <img class="logo footer__logo" src="img/vertical-logo.svg" alt="BEST TOUR PLAN">
+                    <a href="index.html" class="logo">
+                      <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="footer__logo" data-aos="fade-right"
+                        data-aos-delay="100" />
+                    </a>
+
             <div class="footer__list footer__categories" >
               <h3 class="footer__title">ALL CATEGORIES</h3>
               <ul class="footer__ul" >
@@ -421,7 +426,7 @@
                   <div class="footer__input-group">
                     <input type="text" class="input footer__input" placeholder="Your Full Name" name="name" required>
                   </div>
-                  <div class="footer__input-group"><input type="tel" class="input footer__input" placeholder="Phone Number" name="phone" required minlength="10"></div>
+                  <div class="footer__input-group"><input type="tel" class="input footer__input" placeholder="Phone Number" name="phone" required minlength="11"></div>
                  
                   <textarea  class="message footer__message" placeholder="Massege" name="message"></textarea>
                           <button class="button footer__button" type="submit">Send</button>
@@ -466,7 +471,7 @@
                       <h3 class="modal__title modal__title--mb-3">booking</h3>
                       <form action="send.php" method="POST" class="modal__form form">
                         <input type="text" class="input modal__input" placeholder="Your Full Name" name="name" required minlength="2">
-                        <input type="tel" class="input modal__input" placeholder="Phone Number" name="phone" required minlength="10" >
+                        <input type="tel" class="input modal__input" placeholder="Phone Number" name="phone" required minlength="11" >
                         <input type="email" class="input modal__input" placeholder="Yor Email" name="email" required>
                         <textarea cols="30" rows="10" class="message modal__message" placeholder="Massege"></textarea>
                         <button class="button modal__button" type="submit">Send</button>
@@ -486,7 +491,7 @@
             <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
             <form action="send.php" method="POST" class="modal__form form">
               <input type="text" class="input modal__input" placeholder="Your Full Name" name="name" required minlength="2">
-              <input type="tel" class="input modal__input" placeholder="Phone Number" name="phone" required minlength="10">
+              <input type="tel" class="input modal__input" placeholder="Phone Number" name="phone" required minlength="11">
               <input type="email" class="input modal__input" placeholder="Yor Email" name="email" required>
               <textarea cols="30" rows="10" class="message modal__message" placeholder="Massege"></textarea>
               <button class="button modal__button" type="submit">Send</button>
